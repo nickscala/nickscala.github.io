@@ -1040,21 +1040,9 @@ textarea.form-control, textarea.form-control:focus {
 /* --- End of Testimonials --- */
 
 /* --- Clients --- */
-.clients.owl-carousel .client-block {
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
 .client-block {
-  text-align: center;
-  padding: 5px 0;
-  margin-bottom: 30px;
-  opacity: .7;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 10px 10px;
+  width: 100%;
 }
 /* --- End of Clients --- */
 
