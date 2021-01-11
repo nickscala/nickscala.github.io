@@ -1,10 +1,3 @@
-/*
-* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.3.0
-*/
-
 /* ------------------------------------------------------------
 1. Fonts
 2. General Styles
@@ -471,9 +464,29 @@ input[type="submit"]:focus {
   opacity: .9;
 }
 
-.social-links ul li a:hover {
+.fa-linkedin-in:hover {
   opacity: 1;
-  background-color: rgba(255,255,255,.2);
+  color: #2867B2;
+}
+
+.fa-github:hover {
+  opacity: 1;
+  color: #000; 
+}
+
+.fa-instagram:hover {
+  opacity: 1;
+  color: #E95950; 
+}
+
+.fa-twitter:hover {
+  opacity: 1;
+  color: #1DA1F2; 
+}
+
+.fa-youtube:hover {
+  opacity: 1;
+  color: #FF0000; 
 }
 /* --- End Social Links --- */
 
