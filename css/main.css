@@ -1372,6 +1372,17 @@ textarea.form-control, textarea.form-control:focus {
   list-style: none;
 }
 
+.knowledges a:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+}
+
 .knowledges li {;
   display: inline-block;
   background-color: #0575E6;
@@ -1380,6 +1391,15 @@ textarea.form-control, textarea.form-control:focus {
   padding: 1px 10px;
   margin: 3px 2px;
   font-size: 13px;
+}
+
+.knowledges li:hover {
+  background-color: #021B79;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 /* --- End of Knowledges --- */
 
