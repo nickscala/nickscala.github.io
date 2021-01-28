@@ -15,7 +15,9 @@
 1. Fonts
 ------------------------------------------------------------ */
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+
 
 /* Linear Icons Font */
 @import url('./fonts/linear-icons-font/style.css');
@@ -41,9 +43,9 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  font-size: 15px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  line-height: 1.65em;
+  font-size: 16px;
+  font-family: 'Assistant', Helvetica, sans-serif;
+  line-height: 1.5em;
   overflow: hidden;
   color: #555;
   background-repeat: no-repeat;
@@ -54,7 +56,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -149,7 +151,7 @@ input[type="submit"],
   text-shadow: none;
   background-color: #fff;
   border-radius: 30px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: 'Assistant', Helvetica, sans-serif;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -678,7 +680,7 @@ input[type="text"] {
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: 'Assistant', Helvetica, sans-serif;
   box-shadow: 0px 10px 10px -8px rgba(0,0,0,.1);
 }
 
