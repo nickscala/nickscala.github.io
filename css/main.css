@@ -985,6 +985,17 @@ textarea.form-control, textarea.form-control:focus {
   transition: all 0.2s ease-in-out;
 }
 
+.lm-info-block:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+}
+
 .lm-info-block i {
   position: relative;
   font-size: 33px;
@@ -1237,6 +1248,16 @@ textarea.form-control, textarea.form-control:focus {
   font-weight: 300;
   line-height: 1.45em;
   color: #a5a6a7;
+}
+
+.timeline-second-style .item-company:hover {
+  color: #0099cc;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .timeline-second-style .timeline-item:last-child .right-part {
