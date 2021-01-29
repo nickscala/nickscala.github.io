@@ -90,7 +90,7 @@ a {
 }
 
 a:hover {
-  color: #0099cc;
+  color: #0575E6;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1251,7 +1251,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .timeline-second-style .item-company:hover {
-  color: #0099cc;
+  color: #0575E6;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
