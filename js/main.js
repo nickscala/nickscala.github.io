@@ -1,10 +1,3 @@
-/*
-* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.3.0
-*/
-
 (function($) {
 "use strict";
     // Portfolio subpage filters
@@ -66,32 +59,48 @@
 
     // Contact form validator
     $(function () {
-
         $('#contact_form').validator();
 
-        $('#contact_form').on('submit', function (e) {
-            if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
+        var form = document.getElementById("contact_form");
+        var success_message = document.getElementById("contact_form_success");
+        var error_message = document.getElementById("contact_form_error");
+        var button = document.getElementById("contact_form_button");
+        var status = document.getElementById("contact_form_status");
 
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(),
-                    success: function (data)
-                    {
-                        var messageAlert = 'alert-' + data.type;
-                        var messageText = data.message;
+    // Success and Error functions for after the form is submitted
+    
+        function success() {
+          form.style.display = "none";
+          success_message.style.display = "block";
+          error_message.style.display = "none";
+        }
 
-                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                        if (messageAlert && messageText) {
-                            $('#contact_form').find('.messages').html(alertBox);
-                            $('#contact_form')[0].reset();
-                        }
-                    }
-                });
-                return false;
-            }
+        function error() {
+          error_message.style.display = "block";
+        }
+
+        // handle the form submission event
+
+        form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
         });
+       
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function() {
+              if (xhr.readyState !== XMLHttpRequest.DONE) return;
+              if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+              } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+              }
+            };
+            xhr.send(data);
+          }
     });
     // /Contact form validator
 
@@ -302,14 +311,6 @@
                  values.title = item.el.attr('title');
                 }
             },
-        });
-
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
         });
     });
 

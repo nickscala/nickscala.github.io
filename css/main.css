@@ -7,8 +7,7 @@
 6. Elements
 7. Single Page (Blog Posts, 404 etc.)
 8. Media Queries
-9. Pricing
-10. Updates
+9. Updates
 ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------
@@ -1024,7 +1023,7 @@ textarea.form-control, textarea.form-control:focus {
 /* --- End of Info Block with Borders --- */
 
 
-/* --- Testimonials --- */
+/* --- Testimonials --- 
 .testimonial {
   text-align: center;
   border: 2px solid #e5e6e7;
@@ -1073,7 +1072,7 @@ textarea.form-control, textarea.form-control:focus {
   font-weight: 300;
   margin: 0;
 }
-/* --- End of Testimonials --- */
+ --- End of Testimonials --- */
 
 /* --- Clients --- */
 .client-block {
@@ -1274,8 +1273,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* --- End Timeline (Education & Experience) --- */
 
-/* --- Skills --- */
-/* Skills Second Style */
+/* --- Skills --- 
 .skills-info.skills-second-style {
   margin-bottom: 30px;
 }
@@ -1329,7 +1327,6 @@ textarea.form-control, textarea.form-control:focus {
   padding: 0;
 }
 
-/* --- Skills Values --- */
 .skills-second-style .skill-container.skill-1 .skill-percentage {
   width: 95%;
 }
@@ -1366,9 +1363,6 @@ textarea.form-control, textarea.form-control:focus {
   width: 90%;
 }
 
-/* --- End of Skills Values --- */
-
-/* Animate skills on subpage load */
 .pt-page .skills-second-style .skill-percentage,
 .pt-page .skills-second-style .skill-value {
   -webkit-transition: all 2s ease-in-out;
@@ -1384,9 +1378,8 @@ textarea.form-control, textarea.form-control:focus {
 .js .subpages:not(.one-page-layout) .pt-page:not(.pt-page-current) .skills-second-style .skill-value {
   left: 26px !important;
 }
-/* /Skills Second Style */
 
-/* --- End of Skills --- */
+ --- End of Skills --- */
 
 /* --- Knowledges --- */
 .knowledges {
@@ -1503,17 +1496,27 @@ textarea.form-control, textarea.form-control:focus {
   float: right;
 }
 
-.g-recaptcha {
-  margin-bottom: 20px;
+.contact_form_success {
+  display: none;
+}
+
+.contact_form_success ul {
+  padding-left: 40px;
+}
+
+.contact_form_success_icon {
+  color: #4BB543;
+}
+
+.contact_form_error {
+  display: none;
+  color: #ff4e4e;
+}
+
+.contact_form_error ul {
+  list-style-type: none;
 }
 /* --- End of Contact Form --- */
-
-.map {
-  width: 100%;
-  height: 140px;
-  margin: 0 0 35px;
-}
-
 
 /* --- Portfolio --- */
 .portfolio-filters {
@@ -2647,134 +2650,8 @@ blockquote {
   }
 }
 
-
-
 /* ============================================================================= 
-9. Pricing
-============================================================================= */
-/* Pricing */
-.fw-pricing .fw-package {
-  background-color: #fff;
-  border: 2px solid #e5e5e5;
-  border-radius: 15px;
-  padding: 30px 30px;
-  margin-bottom: 10px;
-  text-align: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.fw-pricing .fw-package-wrap.highlight-col .fw-package {
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
-  transform: translateY(-5px);
-  -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
-  -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
-  -o-box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
-  box-shadow: 0 7px 12px rgba(0, 0, 0, .12);
-}
-
-.fw-pricing .fw-package:hover,
-.fw-pricing .fw-package-wrap.highlight-col .fw-package:hover {
-  -webkit-transform: translateY(-9px);
-  -ms-transform: translateY(-9px);
-  -o-transform: translateY(-9px);
-  transform: translateY(-9px);
-  -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
-  -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
-  -o-box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
-  box-shadow: 0 18px 24px rgba(0, 0, 0, .15);
-}
-
-.fw-pricing .fw-package-wrap.highlight-col .fw-heading-row span {
-  position: relative;
-  display: inline-block;
-}
-
-.fw-pricing .fw-package-wrap.highlight-col .fw-heading-row span:after {
-  content: '';
-  height: 2px;
-  margin-top: 0;
-  background-color: #0575E6;
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  right: 0;
-}
-
-.fw-pricing .fw-pricing-row {
-  padding: 30px 0 10px;
-}
-
-.fw-pricing .fw-pricing-row span {
-  display: block;
-  line-height: 1;
-  color: #333;
-  font-size: 42px;
-}
-
-.fw-pricing .fw-pricing-row small {
-  color: #aaa;
-  display: block;
-}
-
-.fw-pricing .fw-default-row {
-  padding: 5px 0;
-  font-size: 14px;
-}
-
-.fw-pricing .fw-button-row {
-  padding: 10px 0 20px;
-}
-
-.fw-pricing .fw-price-icon-no:before {
-    content: "\f068";
-    color: #e87878;
-}
-
-.fw-pricing .fw-price-icon-yes:before {
-    content: "\f058";
-    color: #ade878;
-}
-
-/* table */
-.fw-table table {
-  width: 100%;
-  border: 1px solid #eee;
-  font-size: .875em;
-}
-
-.fw-table table tr,
-.fw-table table tr.heading-row {
-  border-bottom: 1px solid #eee;
-}
-
-.fw-table table tr:not(.heading-row):last-child {
-  border-bottom: 0;
-}
-
-.fw-table table th {
-  padding: 7px 12px;
-  border-right: 1px solid #eee;
-}
-
-.fw-table table td {
-  padding: 7px 12px;
-  border-right: 1px solid #eee;
-}
-
-.fw-table table td:last-child {
-  border-right: 0;
-}
-
-
-
-/* ============================================================================= 
-10. Updates
+9. Updates
 ============================================================================= */
 
 /* v1.1 */

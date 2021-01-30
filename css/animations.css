@@ -1,47 +1,5 @@
 /* animation sets */
 
-/* move from / to  */
-
-.animated-section-moveToLeft {
-	-webkit-animation: moveToLeft .6s ease both;
-	animation: moveToLeft .6s ease both;
-}
-
-.animated-section-moveFromLeft {
-	-webkit-animation: moveFromLeft .6s ease both;
-	animation: moveFromLeft .6s ease both;
-}
-
-.animated-section-moveToRight {
-	-webkit-animation: moveToRight .6s ease both;
-	animation: moveToRight .6s ease both;
-}
-
-.animated-section-moveFromRight {
-	-webkit-animation: moveFromRight .6s ease both;
-	animation: moveFromRight .6s ease both;
-}
-
-.animated-section-moveToTop {
-	-webkit-animation: moveToTop .6s ease both;
-	animation: moveToTop .6s ease both;
-}
-
-.animated-section-moveFromTop {
-	-webkit-animation: moveFromTop .6s ease both;
-	animation: moveFromTop .6s ease both;
-}
-
-.animated-section-moveToBottom {
-	-webkit-animation: moveToBottom .6s ease both;
-	animation: moveToBottom .6s ease both;
-}
-
-.animated-section-moveFromBottom {
-	-webkit-animation: moveFromBottom .6s ease both;
-	animation: moveFromBottom .6s ease both;
-}
-
 /* fade */
 
 .animated-section-fade {
