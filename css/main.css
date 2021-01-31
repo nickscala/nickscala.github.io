@@ -1839,7 +1839,7 @@ textarea.form-control, textarea.form-control:focus {
   line-height: 44px;
   font-size: 44px;
   text-align: center;
-  content: "\e828";
+  content: "\e84c";
   color: #fff;
 }
 
@@ -2034,7 +2034,7 @@ textarea.form-control, textarea.form-control:focus {
   display: inline-block;
 }
 
-.tags a {
+.tags ul li {
   display: inline-block;
   font-size: 12px;
   line-height: 1.5em;
@@ -2263,6 +2263,10 @@ textarea.form-control, textarea.form-control:focus {
 
 .entry-meta-bottom .entry-share {
   float: right;
+}
+
+.entry-date {
+  color: #9e9e9e;
 }
 
 .entry-meta.entry-meta-bottom .date-author > span:after {
