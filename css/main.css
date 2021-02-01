@@ -871,22 +871,6 @@ textarea.form-control, textarea.form-control:focus {
   color: #0575E6;
 }
 
-.block-title:after {
-  position: absolute;
-  opacity: 0.45;
-  top: 10px;
-  right: 0;
-  content: '';
-  height: 20px;
-  width: 30px;
-  background-image: -webkit-repeating-radial-gradient(center center, #0575E6, #0575E6 1px, transparent 0px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, #0575E6, #0575E6 1px, transparent 0px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, #0575E6, #0575E6 1px, transparent 0px, transparent 100%);
-  -webkit-background-size: 6px 6px;
-  -moz-background-size: 6px 6px;
-  background-size: 6px 6px;
-  z-index: 0;
-}
 
 /* --- White Spaces --- */
 .white-space-10 {
@@ -1189,6 +1173,19 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .right-part ul {
   padding-left: 20px;
   font-size: 0.92em;
+}
+
+.timeline-second-style .right-part a {
+  color: #0575E6;
+}
+
+.timeline-second-style .right-part a:hover {
+  color: #021B79;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .timeline-second-style .divider {
