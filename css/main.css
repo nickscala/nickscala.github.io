@@ -1854,6 +1854,21 @@ textarea.form-control, textarea.form-control:focus {
 .blog-card .post-meta .item, .post-meta .item a {
   color: #a6a6a6;
 }
+
+.single-page-content figure {
+ padding: 20px;
+
+}
+
+.single-page-content figcaption {
+  display: inline-block;
+  width: 100%;
+  color: #9e9e9e;
+  background-color: #fcfcfc;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
 /* --- End of Blog --- */
 
 
