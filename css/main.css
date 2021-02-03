@@ -2311,6 +2311,22 @@ blockquote {
   font-style: italic;
 }
 
+.post-content ul {
+  padding-left: 30px;
+}
+
+.post-content a {
+  color: #0575E6;
+}
+
+.post-content a:hover {
+  color: #021B79;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
 
 /* ------------------------------------------------------------
 8. Media Queries
