@@ -59,9 +59,12 @@
 
     // Contact form validator
     $(function () {
-        $('#contact_form').validator();
-
         var form = document.getElementById("contact_form");
+         if (!form) {
+            return;
+         }   
+
+        $('#contact_form').validator();
         var success_message = document.getElementById("contact_form_success");
         var error_message = document.getElementById("contact_form_error");
         var button = document.getElementById("contact_form_button");
