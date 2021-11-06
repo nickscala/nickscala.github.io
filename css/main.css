@@ -1068,10 +1068,7 @@ textarea.form-control, textarea.form-control:focus {
 /* --- Sliders Nav --- */
 .testimonials.owl-carousel .owl-nav,
 .clients.owl-carousel .owl-nav {
-  position: absolute;
   text-align: right;
-  right: 0;
-  top: -52px;
 }
 
 .testimonials.owl-carousel .owl-nav .owl-prev,
